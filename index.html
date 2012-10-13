@@ -1,0 +1,165 @@
+<html>
+
+<head>
+
+	<title>Snake And Ladders</title>
+
+<link rel="stylesheet" type="text/css" href="snl.css" />
+
+	
+</head>
+
+<body>
+
+<div id="outerWrapper">
+
+	<div id="headerWrapper">
+		<h1>Snakes And Ladders</h1>
+		<h2>Just another classic game for your entertainment!</h2>
+	</div>
+	
+	<div id="welcomeWrapper">
+		<ul id="navi">
+			<li><a href="#centerWrapper">Play Game!</a></li>
+			<li><a href="#howtoplay">How To Play?</a></li>
+			<li><a href="#share">Share</a></li>
+			<li><a href="#footerWrapper">Credits</a><li>
+		</ul>
+	</div>
+	
+
+	<div id="leftWrapper">
+
+		<!--<h2 class="name">You</h2>-->
+
+		<form action="#" name="playerOne">
+		<input type="button" value="You" id="button" >
+		<br />
+		<center>
+		<img src="images/dice-six.png" id="firstdice1" onclick="rolling()" />
+		<img src="images/dice-five.png" id="seconddice1" onclick="rolling()" />
+		</center>
+		
+		<!--<textarea rows="3" cols="30" name="statement1" id="statement1" ></textarea>-->
+		<br /><br />
+		<textarea rows="3" cols="30" name="position1" id="position1"></textarea>
+		<textarea rows="2" cols="30" name="location1" id="location1" ></textarea>
+		</form>
+
+		<div id="dummy">
+	
+		</div>
+	</div>
+
+	<div id="centerWrapper">
+
+<div>
+		<table>
+	<tr>
+		<td id="b100">100 </td><td id="b99">99 </td><td id="b98"> 98</td><td id="b97">97 </td><td id="b96">96 </td><td id="b95">95 </td><td id="b94"> 94</td><td id="b93">93 </td><td id="b92">92 </td><td id="b91">91 </td>
+	</tr> <!-- one -->
+	<tr>
+		<td id="b81">100 </td><td id="b82">99 </td><td id="b83"> 98</td><td id="b84">97 </td><td id="b85">96 </td><td id="b86">95 </td><td id="b87"> 94</td><td id="b88">93 </td><td id="b89">92 </td><td id="b90">91 </td>
+	</tr> <!-- two -->
+	<tr>
+		<td id="b80">100 </td><td id="b79">99 </td><td id="b78"> 98</td><td id="b77">97 </td><td id="b76">96 </td><td id="b75">95 </td><td id="b74"> 94</td><td id="b73">93 </td><td id="b72">92 </td><td id="b71">91 </td>
+	</tr> <!-- three -->
+	<tr>
+		<td id="b61">100 </td><td id="b62">99 </td><td id="b63"> 98</td><td id="b64">97 </td><td id="b65">96 </td><td id="b66">95 </td><td id="b67"> 94</td><td id="b68">93 </td><td id="b69">92 </td><td id="b70">91 </td>
+	</tr> <!-- four -->
+	<tr>
+		<td id="b60">100 </td><td id="b59">99 </td><td id="b58"> 98</td><td id="b57">97 </td><td id="b56">96 </td><td id="b55">95 </td><td id="b54"> 94</td><td id="b53">93 </td><td id="b52">92 </td><td id="b51">91 </td>
+	</tr> <!-- five -->
+	<tr>
+		<td id="b41">10 </td><td id="b42">99 </td><td id="b43"> 98</td><td id="b44">97 </td><td id="b45">96 </td><td id="b46">95 </td><td id="b47"> 94</td><td id="b48">93 </td><td id="b49">92 </td><td id="b50">91 </td>
+	</tr> <!-- six -->
+	<tr>
+		<td id="b40">100 </td><td id="b39">99 </td><td id="b38"> 98</td><td id="b37">97 </td><td id="b36">96 </td><td id="b35">95 </td><td id="b34"> 94</td><td id="b33">93 </td><td id="b32">92 </td><td id="b31">91 </td>
+	</tr> <!-- seven-->
+	<tr>
+		<td id="b21">100 </td><td id="b22">99 </td><td id="b23"> 98</td><td id="b24">97 </td><td id="b25">96 </td><td id="b26">95 </td><td id="b27"> 94</td><td id="b28">93 </td><td id="b29">92 </td><td id="b30">91 </td>
+	</tr> <!-- eight -->
+	<tr>
+		<td id="b20">100 </td><td id="b19">99 </td><td id="b18"> 98</td><td id="b17">97 </td><td id="b16">96 </td><td id="b15">95 </td><td id="b14"> 94</td><td id="b13">93 </td><td id="b12">92 </td><td id="b11">91 </td>
+	</tr> <!-- nine-->
+	<tr>
+		<td id="b1">10</td><td id="b2">99 </td><td id="b3"> 98</td><td id="b4">97 </td><td id="b5">96 </td><td id="b6">95 </td><td id="b7"> 94</td><td id="b8">93 </td><td id="b9">92 </td><td id="b10">91 </td>
+	</tr> <!-- ten -->
+</table></div>
+		<div style="margin-top: 10px">
+		<div id="chipRed" >1</div>
+		<div id="chipBlue">2</div>
+		</div>
+	</div><!-- style="position: absolute; bottom: -180px; left: 360px;" //  style="position: absolute; bottom: -180px; left: 420px;" -->
+
+	<div id="rightWrapper">
+
+		
+		<div id="computer">
+
+		<!--<h2 class="name">COMPUTER</h2>-->
+
+		<form action="#" name="computer">
+		<input type="button" value="Computer" id="button2" >
+		<br />
+		<center>
+		<img src="images/dice-six.png" id="firstdice2" />
+		<img src="images/dice-five.png" id="seconddice2" />
+		<center>
+		<!--<textarea rows="3" cols="30" name="statement2" id="statement2" ></textarea>-->
+		<br /><br />
+		<textarea rows="3" cols="25" name="position2" id="position2"></textarea>
+		<textarea rows="2" cols="25" name="location2" id="location2" ></textarea>
+		</form>
+
+		</div>
+
+	
+	</div>
+
+	<div style="clear:both;"></div>
+
+	<div id="howtoplay">
+		<h2 class="title">How To Play?</h2>
+		Welcome to this Snakes and Ladders game! How you play this game is no different from the rest. <br />
+		The red chip is you, while the blue chip is the computer. 
+		<br />All you have to do is click on the dices on the left to roll the dice
+		and your chip will then move accordingly. <br />If you land on a ladder, you will move up board and if you land on a snake, you move
+		down the board. <br />The first chip to reach 100 wins!<br />
+		And most importantly, don't forget to have fun :D <br /><br />
+	</div>
+
+	<div id="share">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="Come play this Snakes & Ladders game!" data-via="narrthine" data-lang="en" data-related="narrthine">Tweet</a>
+		<div class="fb-like" data-href="http://snakenladders.blogspot.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+		<g:plusone></g:plusone>
+	</div>
+
+	<div id="footerWrapper">
+		A side project by <a href="http://itssixeleven.wordpress.com">Shiva Narrthine</a>. All Rights Reserved 2011.
+	</div>
+
+</div>
+
+<script type="text/javascript" src="snl.js"></script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=238608839519704";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</body>
+
+</html>
+	
