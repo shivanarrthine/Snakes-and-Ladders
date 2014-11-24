@@ -1,7 +1,9 @@
 Snakes-and-Ladders
 ==================
 
-A simple Snakes and Ladders game I created a few years ago, also one of my first applications. Live web version available here http://snakenladders.blogspot.com
+A simple Snakes and Ladders game I created a few years ago, also one of my first applications. 
+
+![Preview](https://cloud.githubusercontent.com/assets/1027482/5166776/c9327796-742d-11e4-8a6d-a6d82a77a0e0.png)
 
 Scope:
 This game currently allows users to click on the dice to roll it, and the coin on the board will move to its respective position. The user who gets their coin to box #100 first wins the game.
